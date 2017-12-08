@@ -41,6 +41,7 @@ export class ReduxToastr extends React.Component {
   toastrFired = {};
 
   toastrPositions = [
+    'center',
     'top-left',
     'top-right',
     'top-center',

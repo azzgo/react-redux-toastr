@@ -11,7 +11,7 @@ body.toastr-confirm-active {
     box-sizing: border-box;
   }
 
-  .top-left, .top-right, .top-center, .bottom-left, .bottom-right, .bottom-center {
+  .center, .top-left, .top-right, .top-center, .bottom-left, .bottom-right, .bottom-center {
     width: $toastr-width;
     position: fixed;
     z-index: 99999999;
@@ -37,6 +37,13 @@ body.toastr-confirm-active {
   .top-center, .bottom-center {
     left: 50%;
     margin-left: -($toastr-width / 2);
+  }
+
+  .center {
+    left: 50%;
+    margin-left: -($toastr-width / 2);
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   @media (max-width: 320px) {
